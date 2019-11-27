@@ -1,3 +1,4 @@
 .stack-work/
 task1.cabal
 *~
+.vscode
