@@ -23,3 +23,7 @@ sortTrainsOnDest (x:xs) = sortTrainsOnDest [a | a <- xs, (destination a < destin
                           sortTrainsOnDest [b | b <- xs, (destination b >= destination x) ??? (departureTime b >= departureTime x)]
                           where 
                             (???) false _ = false
+
+showTrain :: Train -> String
+showTrain train = "Train #" ++ show (numberOfTrain train) ++ " in: " ++ 
+                  destination train ++ ", at time: " ++ show (departureTime train)
